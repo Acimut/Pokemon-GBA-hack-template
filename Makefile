@@ -79,14 +79,10 @@ GBA_8BPP_PAL_LZ := $(GBA_8BPP_GBAPALLZ:%=%.lz)
 
 
 # Sources
-# C_MAIN función principal que inicializa el sistema. Se compila primero que nada.
-# Se puede omitir el archivo main.c
-C_MAIN := $(SRC)/main.c
 C_SRC := $(call rwildcard,$(SRC),*.c)
 S_SRC := $(call rwildcard,$(SRC),*.s)
 
 # Binaries
-C_MAIN := $(C_MAIN:%.c=$(BUILD)/%.o)
 C_OBJ := $(C_SRC:%.c=$(BUILD)/%.o)
 S_OBJ := $(S_SRC:%.s=$(BUILD)/%.o)
 
