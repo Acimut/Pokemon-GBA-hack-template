@@ -171,6 +171,7 @@ struct Time
     /*0x02*/ s8 hours;
     /*0x03*/ s8 minutes;
     /*0x04*/ s8 seconds;
+    /*0x05*/ s8 filler[2];//SaveBlock2 fix
 };
 
 struct Pokedex
@@ -395,6 +396,7 @@ struct Pokeblock
     u8 bitter;
     u8 sour;
     u8 feel;
+    u8 filler;//SaveBlock1 fix emerald
 };
 
 struct Roamer
@@ -511,6 +513,7 @@ struct Mail
     /*0x1A*/ u8 trainerId[TRAINER_ID_LENGTH];
     /*0x1E*/ u16 species;
     /*0x20*/ u16 itemId;
+    /*0x22*/ u16 filler_22;//SaveBlock1 fix
 };
 
 struct DayCareMail
@@ -589,6 +592,7 @@ struct QuestLogObjectEvent
     /*0x0f*/ u8 previousMetatileBehavior;
     /*0x10*/ u8 directionSequenceIndex;
     /*0x11*/ u8 animId;
+    /*0x12*/ u16 filler_12;//SaveBlock1 fix
 };
 
 struct QuestLog
@@ -617,6 +621,7 @@ struct FameCheckerSaveData
     /*3a54*/ u16 pickState:2;
     u16 flavorTextFlags:12;
     u16 unk_0_E:2;
+    u16 filler_02;//SaveBlock1 fix
 };
 
 struct WonderNewsMetadata
