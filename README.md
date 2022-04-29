@@ -9,7 +9,7 @@
 - Para compilar es necesario tener preproc.exe y gbagfx.exe dentro alguna ruta de la variable PATH
 
 - Abrir el archivo config.mk, buscar y cambiar fa0000 de la siguiente línea por un offset alineado con suficiente espacio libre:
-        `INSERT_INTO ?= 0x08ff0000`
+        `INSERT_INTO ?= 0x08fa0000`
 - En el archivo config.mk, buscar la siguiente línea
         `ROM_CODE ?= BPRE`
     - mantener  BPRE para compilar usando Fire Red
